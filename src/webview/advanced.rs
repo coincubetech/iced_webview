@@ -187,7 +187,7 @@ impl<Engine: engines::Engine + Default, Message: Send + Clone + 'static> WebView
     }
 
     /// Like a normal `view()` method in iced, but takes an id of the desired view
-    pub fn view(&self, id: usize) -> Element<Action> {
+    pub fn view<T>(&self, id: usize) -> Element<Action, T> {
         WebViewWidget::new(
             id,
             self.view_size,
