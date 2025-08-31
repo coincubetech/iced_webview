@@ -216,7 +216,7 @@ impl WebViewWidget {
     }
 }
 
-impl<Renderer> Widget<Action, Theme, Renderer> for WebViewWidget
+impl<Renderer, Theme> Widget<Action, Theme, Renderer> for WebViewWidget
 where
     Renderer: iced::advanced::image::Renderer<Handle = iced::advanced::image::Handle>,
 {
