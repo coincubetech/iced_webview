@@ -304,7 +304,7 @@ where
     }
 }
 
-impl<'a, Message: 'a, Renderer> From<WebViewWidget> for Element<'a, Message, Theme, Renderer>
+impl<'a, Message: 'a, Renderer, Theme> From<WebViewWidget> for Element<'a, Message, Theme, Renderer>
 where
     Renderer: advanced::Renderer + advanced::image::Renderer<Handle = advanced::image::Handle>,
     WebViewWidget: Widget<Message, Theme, Renderer>,
