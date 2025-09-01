@@ -128,6 +128,8 @@ impl ImageInfo {
             self.height,
             self.pixels.clone(),
         ))
+        .content_fit(iced::ContentFit::ScaleDown)
+        .filter_method(image::FilterMethod::Nearest)
     }
 
     fn blank(width: u32, height: u32) -> Self {
