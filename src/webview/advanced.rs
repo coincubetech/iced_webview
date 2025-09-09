@@ -10,8 +10,8 @@ use iced::event::Status;
 use iced::keyboard;
 use iced::mouse::{self, Interaction};
 use iced::widget::image::{Handle, Image};
-use iced::{theme::Theme, Event, Length, Rectangle};
 use iced::{Element, Point, Size, Task};
+use iced::{Event, Length, Rectangle};
 use url::Url;
 
 use crate::{engines, ImageInfo, PageType, ViewId};
